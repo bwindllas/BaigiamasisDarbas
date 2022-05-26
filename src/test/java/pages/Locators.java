@@ -15,4 +15,17 @@ public class Locators {
             public static By fieldUserName = By.xpath("//*[@id='__next']/nav/div[1]/div[2]/div/div/div/div/div/div[1]/div/p[2]");
         }
     }
+
+    public static class Demoblaze {
+
+        public static class Contact {
+
+            public static By buttonContact = By.xpath("//*[@class='nav-link' and text()='Contact']");
+            public static By inputContactEmail = By.xpath("//*[@id='recipient-email']");
+            public static By inputContactName = By.xpath("//*[@id='recipient-name']");
+            public static By inputMessage = By.xpath("//*[@id='message-text']");
+            public static By buttonSendMessage = By.xpath("(//*[@class='btn btn-primary'])[1]");
+
+        }
+    }
 }
