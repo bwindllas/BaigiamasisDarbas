@@ -28,4 +28,17 @@ public class Locators {
 
         }
     }
+
+    public static class CheckLi {
+
+        public static class ProjectX {
+
+            public static By buttonBoxFieldOne = By.xpath("//*[@id='tasks']/li[1]/div[1]/label");
+            public static By buttonBoxFieldTwo = By.xpath("//*[@id='tasks']/li[2]/div[1]/label");
+            public static By fieldEnterName = By.xpath("//*[@id='field-name']");
+            public static By buttonContinue = By.xpath("/html/body/div[2]/div/div[1]/div/div/div/a");
+            public static By textCompleteMessage = By.xpath("/html/body/div[2]/div/div[1]/div/div/div/div/h1/span");
+        }
+
+    }
 }
