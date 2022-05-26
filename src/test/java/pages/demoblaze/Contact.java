@@ -31,6 +31,9 @@ public class Contact {
         Common.clickElement(Locators.Demoblaze.Contact.buttonSendMessage);
     }
 
+    public static void clickOkToCloseAlertBox() {
+        Common.acceptAlert();
+    }
 
     public static Boolean isAlertPresent() {
         return Common.isAlertPresent();

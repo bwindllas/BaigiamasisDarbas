@@ -20,8 +20,9 @@ public class Contact extends BaseTest {
         pages.demoblaze.Contact.enterContactName();
         pages.demoblaze.Contact.enterMessage();
         pages.demoblaze.Contact.clickSendMessage();
+        pages.demoblaze.Contact.clickOkToCloseAlertBox();
 
-        Assert.assertTrue(pages.demoblaze.Contact.isAlertPresent());
+        Assert.assertFalse(pages.demoblaze.Contact.isAlertPresent());
 
     }
 }
