@@ -13,8 +13,8 @@ public class Driver {
     public static void setDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized");
         driver.set(new ChromeDriver(options));
+        driver.get().manage().window().maximize();
         driver.get().manage().timeouts().implicitlyWait(Constants.TIMEOUT);
     }
 
