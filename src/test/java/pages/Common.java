@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Driver;
 
 
@@ -40,4 +42,19 @@ public class Common {
             return false;
         }
     }
+    public static void waitForElementToBeClickable(By locator) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Constants.TIMEOUT);
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
+    public static void waitForElementToBeVisible(By locator) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Constants.TIMEOUT);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public static void waitForAttributeContains(By locator, String attribute, String value) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Constants.TIMEOUT);
+        wait.until(ExpectedConditions.attributeContains(locator, attribute, value));
+    }
+
 }
