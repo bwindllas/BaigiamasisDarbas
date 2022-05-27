@@ -39,6 +39,26 @@ public class Locators {
             public static By buttonContinue = By.xpath("/html/body/div[2]/div/div[1]/div/div/div/a");
             public static By textCompleteMessage = By.xpath("/html/body/div[2]/div/div[1]/div/div/div/div/h1/span");
         }
-
     }
-}
+
+        public static class Saucedo {
+
+            public static class PurchaseBackpack {
+
+                public static By inputFieldUserName = By.xpath("//*[@id='user-name']");
+                public static By inputFieldPassword = By.xpath("//*[@id='password']");
+                public static By buttonLogin = By.xpath("//*[@id='login-button']");
+                public static By buttonAddToCart = By.xpath("//*[@id='add-to-cart-sauce-labs-backpack']");
+                public static By buttonImageCart = By.xpath("//*[@id='shopping_cart_container']");
+                public static By buttonCheckout = By.xpath("//*[@id='checkout']");
+                public static By inputFieldFirstName = By.xpath("//*[@id='first-name']");
+                public static By inputFieldLastName = By.xpath("//*[@id='last-name']");
+                public static By inputFieldZipCode = By.xpath("//*[@id='postal-code']");
+                public static By buttonContinue = By.xpath("//*[@id='continue']");
+                public static By buttonFinish = By.xpath("//*[@id='finish']");
+
+                public static By textFieldComplete = By.xpath("//*[@class='title']");
+
+            }
+        }
+    }
